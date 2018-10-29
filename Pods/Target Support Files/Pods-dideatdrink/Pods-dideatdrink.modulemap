@@ -1,0 +1,6 @@
+framework module Pods_dideatdrink {
+  umbrella header "Pods-dideatdrink-umbrella.h"
+
+  export *
+  module * { export * }
+}

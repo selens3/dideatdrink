@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		BD7FD8C9B184D2D3A14F5281 /* Pods_dideatdrink.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D27152697EDB5CEDF3EC5CFC /* Pods_dideatdrink.framework */; };
+		EB2BD1562189C2F00012311A /* kullanicikonumVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2BD1552189C2F00012311A /* kullanicikonumVC.swift */; };
 		EB54DCE82186E93A0028C7AE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB54DCE72186E93A0028C7AE /* AppDelegate.swift */; };
 		EB54DCEA2186E93A0028C7AE /* kullaniciVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB54DCE92186E93A0028C7AE /* kullaniciVC.swift */; };
 		EB54DCED2186E93A0028C7AE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB54DCEB2186E93A0028C7AE /* Main.storyboard */; };
@@ -20,6 +21,7 @@
 		06D29CCFDE423E3FCB9A370E /* Pods-dideatdrink.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dideatdrink.debug.xcconfig"; path = "Pods/Target Support Files/Pods-dideatdrink/Pods-dideatdrink.debug.xcconfig"; sourceTree = "<group>"; };
 		B1AF9854D92CC179BB005897 /* Pods-dideatdrink.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dideatdrink.release.xcconfig"; path = "Pods/Target Support Files/Pods-dideatdrink/Pods-dideatdrink.release.xcconfig"; sourceTree = "<group>"; };
 		D27152697EDB5CEDF3EC5CFC /* Pods_dideatdrink.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_dideatdrink.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB2BD1552189C2F00012311A /* kullanicikonumVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = kullanicikonumVC.swift; sourceTree = "<group>"; };
 		EB54DCE42186E93A0028C7AE /* dideatdrink.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = dideatdrink.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB54DCE72186E93A0028C7AE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EB54DCE92186E93A0028C7AE /* kullaniciVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = kullaniciVC.swift; sourceTree = "<group>"; };
@@ -84,6 +86,7 @@
 				EB54DCE92186E93A0028C7AE /* kullaniciVC.swift */,
 				EB9B656721888613002710AF /* isletmeVC.swift */,
 				EB54DCEB2186E93A0028C7AE /* Main.storyboard */,
+				EB2BD1552189C2F00012311A /* kullanicikonumVC.swift */,
 				EB54DCEE2186E93B0028C7AE /* Assets.xcassets */,
 				EB54DCF02186E93B0028C7AE /* LaunchScreen.storyboard */,
 				EB54DCF32186E93B0028C7AE /* Info.plist */,
@@ -213,6 +216,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB2BD1562189C2F00012311A /* kullanicikonumVC.swift in Sources */,
 				EB54DCEA2186E93A0028C7AE /* kullaniciVC.swift in Sources */,
 				EB9B656821888613002710AF /* isletmeVC.swift in Sources */,
 				EB54DCE82186E93A0028C7AE /* AppDelegate.swift in Sources */,

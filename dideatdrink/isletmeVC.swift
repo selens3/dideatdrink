@@ -25,4 +25,7 @@ class isletmeVC: UIViewController {
     @IBAction func isletmeGirisButtonClicked(_ sender: Any) {
     }
     
+    @IBAction func KHGButtonClicked(_ sender: Any) {
+       
+    }
 }

@@ -18,19 +18,19 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Did Eat&amp;Drink" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dxb-fA-eIO">
-                                <rect key="frame" x="98" y="78" width="179" height="86"/>
+                                <rect key="frame" x="98" y="122" width="179" height="86"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="29"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="işletme kulanıcı adı" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hgv-em-By4">
-                                <rect key="frame" x="33" y="275" width="309" height="30"/>
+                                <rect key="frame" x="33" y="319" width="309" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="işletme şifresi" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OmU-jE-abo">
-                                <rect key="frame" x="33" y="346" width="309" height="30"/>
+                                <rect key="frame" x="33" y="390" width="309" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="309" id="7ht-sE-nlX"/>
                                     <constraint firstAttribute="height" constant="30" id="NpY-De-xns"/>
@@ -40,18 +40,27 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zdU-51-WCR">
-                                <rect key="frame" x="168" y="401" width="39" height="30"/>
+                                <rect key="frame" x="168" y="445" width="39" height="30"/>
                                 <state key="normal" title="GİRİŞ"/>
                                 <connections>
                                     <action selector="isletmeGirisButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Icf-Qt-1uD"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="İşletme Hesabı" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X2g-Uh-1Ww">
-                                <rect key="frame" x="131" y="190" width="113" height="21"/>
+                                <rect key="frame" x="131" y="234" width="113" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rv9-GR-V4q">
+                                <rect key="frame" x="109" y="505" width="156" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Kullanıcı Hesabına Geç"/>
+                                <connections>
+                                    <action selector="KHGButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ks2-Bu-hBF"/>
+                                    <segue destination="cKn-ZN-teo" kind="show" identifier="KHGbuttontokullaniciVC" id="62H-pi-cLd"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -73,6 +82,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" id="Ln7-EY-S72"/>
                     <connections>
                         <outlet property="isletmeKullaniciText" destination="hgv-em-By4" id="KQK-La-Feq"/>
                         <outlet property="isletmeSifreText" destination="OmU-jE-abo" id="PGI-CH-Mdi"/>
@@ -80,7 +90,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="145" y="-85"/>
+            <point key="canvasLocation" x="1084" y="-85.007496251874073"/>
         </scene>
         <!--KullaniciVC-->
         <scene sceneID="pdh-RB-UCV">
@@ -107,11 +117,11 @@
                                 <state key="normal" title="İşletme Hesabına Geç"/>
                                 <connections>
                                     <action selector="IHGButtonClicked:" destination="cKn-ZN-teo" eventType="touchUpInside" id="RIO-m3-4Y5"/>
-                                    <segue destination="BYZ-38-t0r" kind="show" identifier="IHGbuttontoisletmeVC" id="ibn-HX-PNF"/>
+                                    <segue destination="neR-0u-Svw" kind="show" identifier="IHGbuttontoisletmeVC" id="ibn-HX-PNF"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Did Eat&amp;Drink" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EkD-UL-0fn">
-                                <rect key="frame" x="104" y="96" width="179" height="86"/>
+                                <rect key="frame" x="104" y="140" width="179" height="42"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="29"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -130,6 +140,7 @@
                                 <state key="normal" title="GİRİŞ"/>
                                 <connections>
                                     <action selector="girisButtonClicked:" destination="cKn-ZN-teo" eventType="touchUpInside" id="Y7Q-Q6-YHd"/>
+                                    <segue destination="v3h-JI-Ba0" kind="show" identifier="kullanicigiristokullanicikonumVC" id="6lz-NK-gec"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="kulanıcı adı" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Yuh-T0-act">
@@ -172,22 +183,68 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vvY-SN-D7k" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="144.80000000000001" y="811.84407796101959"/>
+            <point key="canvasLocation" x="145" y="893"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="HjW-5n-cBh">
+        <!--KullanicikonumVC-->
+        <scene sceneID="y7A-TD-REr">
             <objects>
-                <viewController id="qbW-Nd-mnt" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="5Ah-sZ-fMs">
+                <viewController id="v3h-JI-Ba0" customClass="kullanicikonumVC" customModule="dideatdrink" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6ae-od-zJs">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wRF-oH-OKC">
+                                <rect key="frame" x="359" y="20" width="0.0" height="49"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="49" id="A7i-4r-Y34"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pm1-b1-nqw">
+                                <rect key="frame" x="0.0" y="83" width="375" height="216"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="375" id="FOO-sw-uIo"/>
+                                </constraints>
+                            </pickerView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="i0s-2H-fay"/>
+                        <constraints>
+                            <constraint firstItem="pm1-b1-nqw" firstAttribute="leading" secondItem="oWu-1c-3dL" secondAttribute="leading" id="Kcm-Jp-yJT"/>
+                            <constraint firstItem="oWu-1c-3dL" firstAttribute="bottom" secondItem="pm1-b1-nqw" secondAttribute="bottom" constant="368" id="ZGt-WE-tQG"/>
+                            <constraint firstItem="wRF-oH-OKC" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="6ae-od-zJs" secondAttribute="trailingMargin" id="paf-2R-cQQ"/>
+                            <constraint firstItem="wRF-oH-OKC" firstAttribute="leading" secondItem="oWu-1c-3dL" secondAttribute="leading" constant="359" id="ps3-1d-q9p"/>
+                            <constraint firstItem="pm1-b1-nqw" firstAttribute="top" secondItem="wRF-oH-OKC" secondAttribute="bottom" constant="14" id="ra7-qG-gDb"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="oWu-1c-3dL"/>
                     </view>
+                    <connections>
+                        <outlet property="sehirPickerView" destination="pm1-b1-nqw" id="h1y-kP-BDg"/>
+                        <outlet property="sehirsecLabel" destination="wRF-oH-OKC" id="ZPq-dP-dSG"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="9mr-Cj-EFM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yvb-sc-hIF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1340" y="817"/>
+            <point key="canvasLocation" x="1448.8" y="892.80359820089961"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="ivT-xS-byU">
+            <objects>
+                <navigationController storyboardIdentifier="nvgisletmeController" automaticallyAdjustsScrollViewInsets="NO" id="neR-0u-Svw" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Mkp-Y4-WPx">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="X73-xV-LHx"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IDQ-zy-yKt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="144.80000000000001" y="-85.007496251874073"/>
         </scene>
     </scenes>
 </document>
